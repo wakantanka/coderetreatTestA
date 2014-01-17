@@ -40,17 +40,16 @@ public class ShortParkingLotTest {
 	public void tearDown() throws Exception {
 	}
 
-	@Test
+	//@Test
 	public void testShortpackingCal() {
 		ParkingPageObject.navigateToStartPage(baseUrl);
-		String typex = "Short-Term Parking";
 		
-		selectParkingLotType(typex);
+//		selectParkingLotType("Short-Term Parking");
 		setParkingDatesTodayOneHour();
 		driver.findElement(By.name("Submit")).click();
 	}
 
-	private void setParkingDatesTodayOneHour() {
+	private void setParkingDatesTodayOneHour() { 
 		//driver.findElement(By.id("StartDatum"))
 		PageFactory.initElements(driver, this);
 		startTime.clear();
@@ -65,8 +64,7 @@ public class ShortParkingLotTest {
 	}
 
 	private void selectParkingLotType(String type) {
-		new Select(driver.findElement(By.id("ParkPlatz")))
-				.selectByVisibleText(type);
+		new Select(driver.findElement(By.id("ParkPlatz"))).selectByVisibleText(type);
 	}
 
 }

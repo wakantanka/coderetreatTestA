@@ -10,7 +10,7 @@ mostuseful jbehave embedder
 gebish.org
 geb/spock
 
-DSL GivenWhenThan : Curca
+DSL GivenWhenThan : gherkin syntax
 
 Yoda-time?
 
@@ -19,3 +19,10 @@ cucumber-java
 cucumber-eclipse
 
 http://klosebrothers.de/parkcalc/
+
+
+code 
+
+http://codingdojo.org/
+
+http://ccd-school.de/coding-dojo/
